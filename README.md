@@ -18,8 +18,8 @@ Here are some ideas to get you started:
 ![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)&nbsp;
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)&nbsp;
 ![Bootstrap4](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)&nbsp;
-![Python](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)&nbsp;
-![Photoshop](https://img.shields.io/badge/-Figma-05122A?style=for-the-badge&logo=figma&logoColor=white)&nbsp;
+![Python](https://img.shields.io/badge/Python-092E20?style=for-the-badge&logo=django&logoColor=white)&nbsp;
+![Photoshop](https://img.shields.io/badge/-Photoshop-05122A?style=for-the-badge&logo=figma&logoColor=white)&nbsp;
 ![Illustrator](https://img.shields.io/badge/-Illustrator-05122A?style=for-the-badge&logo=adobe-illustrator&logoColor=white)&nbsp;
 
 
