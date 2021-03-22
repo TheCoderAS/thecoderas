@@ -6,6 +6,9 @@
 Here are some ideas to get you started:
 -->
 - 🌱 I’m currently learning Machine Learning.
+<br>
+<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=shwetalsoni&include_all_commits=true&show_icons=true&count_private=true&locale=en&theme=algolia" alt="shwetalsoni" /></p>
+
 <!--
 - 👯 I’m looking to collaborate on ...
 - 🤔 I’m looking for help with ...
