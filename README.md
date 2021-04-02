@@ -15,6 +15,7 @@ Here are some ideas to get you started:
 <br>
 ![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)&nbsp;
 ![Python](https://img.shields.io/badge/Python-4b8bbe?style=for-the-badge&logo=python&logoColor=white)&nbsp;
+![MATLAB](https://img.shields.io/badge/matlab-c8c8c8?style=for-the-badge&logo=matlab&logoColor=white)&nbsp;
 ![Ruby](https://img.shields.io/badge/Ruby-820c02?style=for-the-badge&logo=ruby&logoColor=white)&nbsp;
 <br><br>
 ![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)&nbsp;
@@ -48,9 +49,10 @@ Here are some ideas to get you started:
 -->
 ### ⚡ &nbsp;Connect with Me
 <p align="left">
-<a href="https://www.linkedin.com/in/aalok-kumar-9497211a2" target="blank"><img align="center" src="https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-linkedin-circle-512.png" alt="aalok-kumar-9497211a2" height="30" width="30" /></a>
-<a href="https://codeforces.com/profile/AalokKumar" target="blank"><img align="center" src="https://lh3.googleusercontent.com/proxy/cJnJWq4G3CCHY0IbH1L2vyqgrrgVYp67ujNEXhCKgNXxDdRdk_rj7KsWSVf97gPDm1EvNIMkSNKGjBy0E9Gy2nribpxtYCISK1pn2wDWae9QDWqR2gNVECT7qTbedIIFN0kkCP7KfL1yH9C-LkeaYr44UZSKWZ4iglo7NN9nz9Rb" alt="aalok766626" height="30" width="30" /></a>
-<a href="https://www.hackerrank.com/aaloksah766626" target="blank"><img align="center" src="https://upload.wikimedia.org/wikipedia/commons/6/65/HackerRank_logo.png" alt="aalok766626" height="30" width="30" /></a>
+<a href="https://www.linkedin.com/in/aalok-kumar-9497211a2" target="blank"><img src="https://img.shields.io/badge/linkedin-ffffff?style=for-the-badge&logo=linkedin&logoColor=0e76a8"/>
+</a>&nbsp;
+<a href="https://codeforces.com/profile/AalokKumar" target="blank"><img src="https://img.shields.io/badge/codeforces-ffff00?style=for-the-badge&logo=codeforces&logoColor=0e76a8"/></a>&nbsp;
+<a href="https://www.hackerrank.com/aaloksah766626" target="blank"><img src="https://img.shields.io/badge/hackerrank-00ff00?style=for-the-badge&logo=hackerrank&logoColor=f5f5f5"/></a>
 </p>
 
 
