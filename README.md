@@ -40,6 +40,7 @@ Here are some ideas to get you started:
 
 ![Nginx](https://img.shields.io/badge/nginx-333333?style=for-the-badge&logo=nginx&logoColor=61DAFB)&nbsp;
 
+<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=thecoderas&include_all_commits=true&show_icons=true&count_private=true&locale=en&theme=algolia" alt="thecoderas" /></p>
 <br>
 
 <!--
