@@ -1,17 +1,17 @@
 <h1>Hi there, 👋 I'm Aalok Kumar</h1>
-<h3>Associate Consultant @ Oracle | Java Developer - Oracle Certified Professional | MERN / MEAN Stack Developer | DSA</h3>
+<h4>Associate Consultant @ Oracle | Java Developer - Oracle Certified Professional | MERN / MEAN Stack Developer | DSA</h4>
 
 <!--
 **TheCoderAS/thecoderas** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
 Here are some ideas to get you started:
 -->
-- 🌱 Specializing in Full Stack Development with over 2 years of experience in Java (Spring Boot) backend and React / Angular front-end tech stack.
+- 🌱 Specializing in Full Stack Development with over 2 years of experience in Java (Spring Boot) and React / Angular tech stack.
 - 🌱 Expertise in Java/J2EE and Microservices architecture development, with proﬁciency in MongoDB and Oracle/SQL databases.
 - 🌱 Experienced in using WinSCP and SSH for secure connection to remote VMs, including tasks such as deploying applications, managing backups, and working on server environments.
 - 🌱 Worked with Nginx as a Web Server, Reverse Proxy, Load Balancer, API Gateway, and for SSL/TLS Termination.
 - 🌱 Completed Electrical Engineering at National Institute of Technology, Hamirpur (2019-2023).
-- Solved 700+ problems over various coding platforms. <a href="https://leetcode.com/u/Aaloks766626/" target="_blank">Leetcode</a>
+- 🌱 Solved 700+ problems over various coding platforms. <a href="https://leetcode.com/u/Aaloks766626/" target="_blank">Leetcode</a>
 <br>
 
 **🛠 Skills and Tools:** \
