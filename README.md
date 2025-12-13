@@ -1,23 +1,21 @@
 <h1>Hi there, 👋 I'm Aalok Kumar</h1>
-<h4>Associate Consultant @ Oracle | Java Developer - Oracle Certified Professional | MERN / MEAN Stack Developer | DSA</h4>
+<h4>Backend Engineer | Building reliable event-driven systems | Java, Python, Spring Boot, FastAPI</h4>
 
-<!--
-**TheCoderAS/thecoderas** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
--->
-- 🌱 Specializing in Full Stack Development with over 2 years of experience in Java (Spring Boot) and React / Angular tech stack.
-- 🌱 Expertise in Java/J2EE and Microservices architecture development, with proﬁciency in MongoDB and Oracle/SQL databases.
-- 🌱 Experienced in using WinSCP and SSH for secure connection to remote VMs, including tasks such as deploying applications, managing backups, and working on server environments.
-- 🌱 Worked with Nginx as a Web Server, Reverse Proxy, Load Balancer, API Gateway, and for SSL/TLS Termination.
-- 🌱 Completed Electrical Engineering at National Institute of Technology, Hamirpur (2019-2023).
-- 🌱 Solved 700+ problems over various coding platforms. <a href="https://leetcode.com/u/Aaloks766626/" target="_blank">Leetcode</a>
+- 🚀 Backend engineer with 3+ years of experience designing and delivering distributed backend systems and event-driven services with a focus on scalability, reliability, and performance.
+- 🧾 Currently building accounting and compliance features at **Tinvio Digital Services**, owning end-to-end system design and development to ensure 100% reliability.
+- 🐍 Added hands-on experience with **Python**, **FastAPI**, and **SQLAlchemy**, alongside deep expertise in Java, Spring, and cloud-native tooling.
+- 🛠️ Experienced across database ecosystems (Oracle/SQL, MongoDB), messaging, API gateways, container orchestration, and observability.
+- 🎓 Electrical Engineering, National Institute of Technology, Hamirpur (2019-2023).
+- 🧠 Solved 700+ problems across various coding platforms. <a href="https://leetcode.com/u/Aaloks766626/" target="_blank">Leetcode</a>
 <br>
 
 **🛠 Skills and Tools:** \
 <br>
 ![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)&nbsp;
 ![Java](https://img.shields.io/badge/Java-4b8bbe?style=for-the-badge&logo=java&logoColor=white)&nbsp;
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)&nbsp;
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)&nbsp;
+![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-8C0000?style=for-the-badge&logo=python&logoColor=white)&nbsp;
 <br><br>
 ![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)&nbsp;
 ![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)&nbsp;
@@ -43,22 +41,8 @@ Here are some ideas to get you started:
 <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=thecoderas&include_all_commits=true&show_icons=true&count_private=true&locale=en&theme=algolia" alt="thecoderas" /></p>
 <br>
 
-<!--
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
 ### ⚡ &nbsp;Connect with Me
 <p align="left">
 <a href="https://www.linkedin.com/in/aalok-kumar-9497211a2" target="blank"><img src="https://img.shields.io/badge/linkedin-ffffff?style=for-the-badge&logo=linkedin&logoColor=0e76a8"/>
 </a>&nbsp;
-<!-- 
-<a href="https://codeforces.com/profile/AalokKumar" target="blank"><img src="https://img.shields.io/badge/codeforces-ffff00?style=for-the-badge&logo=codeforces&logoColor=0e76a8"/></a>&nbsp;
-<a href="https://www.hackerrank.com/aaloksah766626" target="blank"><img src="https://img.shields.io/badge/hackerrank-00ff00?style=for-the-badge&logo=hackerrank&logoColor=f5f5f5"/></a> 
--->
 </p>
-
-
