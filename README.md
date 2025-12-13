@@ -40,7 +40,7 @@
 ![Nginx](https://img.shields.io/badge/nginx-333333?style=for-the-badge&logo=nginx&logoColor=61DAFB)&nbsp;
 
 ### 🧾 Experience
-- **Tinvio Digital Services** — Backend Engineer (Accounting Software, Apr 2025–Present)
+- **Tinvio Digital Services** — Senior Backend Engineer (Jaz - Next-gen Accounting Software, Apr 2025–Present)
   - Own end-to-end feature system design and development for accounting software, ensuring 100% reliability and compliance.
   - Build and maintain services with Java/Spring Boot, Python/FastAPI, SQL/NoSQL databases, and cloud-native tooling to support finance workflows.
 
