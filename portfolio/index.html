@@ -228,17 +228,6 @@ main > section { min-width: 0; width: 100%; }
 .other h3 { font-size: 19px; font-weight: 700; line-height: 1.2; }
 .other p { font-size: 15px; color: var(--muted); }
 
-/* Experience */
-.timeline { display: grid; gap: 12px; }
-.role { display: grid; grid-template-columns: 52px minmax(0, 1fr) auto; gap: 18px; align-items: center; background: var(--surface); border: 1px solid var(--line); border-radius: 18px; padding: 18px 22px; }
-.logo { width: 52px; height: 52px; border-radius: 14px; display: grid; place-items: center; font-family: var(--display); font-weight: 800; font-size: 17px; background: var(--surface-2); border: 1px solid var(--line); }
-.logo.av-t, .logo.av-o { border: 0; color: #FFFFFF; font-size: 22px; text-shadow: 0 1px 2px rgba(0,0,0,.25); }
-.logo.av-t { background: linear-gradient(135deg, #0EA5A0, #2F55F0); box-shadow: 0 8px 20px -10px #2F55F0; }
-.logo.av-o { background: linear-gradient(135deg, #F97316, #DC2626); box-shadow: 0 8px 20px -10px #DC2626; }
-.role h3 { font-size: 19px; font-weight: 700; line-height: 1.25; }
-.role p { font-size: 15px; color: var(--muted); }
-.role .when { font-size: 14px; color: var(--muted); white-space: nowrap; }
-.role .now { color: var(--ok); font-weight: 600; }
 .honest { margin-top: 16px; font-size: 14.5px; color: var(--muted); max-width: 70ch; }
 
 /* Contact */
@@ -365,9 +354,6 @@ dialog.reader::backdrop { background: color-mix(in srgb, #05070C 55%, transparen
   .card.wide { grid-column: auto; }
   .stage { min-height: 140px; }
   .cta-row .btn { flex: 1 1 auto; }
-  .role { grid-template-columns: 44px minmax(0, 1fr); }
-  .logo { width: 44px; height: 44px; font-size: 15px; border-radius: 12px; }
-  .role .when { grid-column: 2; }
   dialog.reader { width: 100%; max-width: 100%; height: 100%; max-height: 100%; margin: 0; border-radius: 0; }
   .reader-bar { padding-top: calc(10px + env(safe-area-inset-top, 0px)); padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(12px, env(safe-area-inset-right, 0px)); }
   .reader-body { padding: 22px max(16px, env(safe-area-inset-right, 0px)) calc(32px + env(safe-area-inset-bottom, 0px)) max(16px, env(safe-area-inset-left, 0px)); }
@@ -399,7 +385,6 @@ dialog.reader::backdrop { background: color-mix(in srgb, #05070C 55%, transparen
     <div class="nav-links">
       <a href="#work" data-spy="work">Work</a>
       <a href="#about" data-spy="about">About</a>
-      <a href="#experience" data-spy="experience">Experience</a>
       <a href="#contact" data-spy="contact">Contact</a>
     </div>
     <div class="nav-tools">
@@ -540,14 +525,6 @@ dialog.reader::backdrop { background: color-mix(in srgb, #05070C 55%, transparen
       <article class="other reveal"><span class="when">Nov – Dec 2025</span><h3>Automatic bank reconciliation</h3><p>Matches bank lines to transactions, including batch payments, transfers and foreign currency.</p></article>
       <article class="other reveal"><span class="when">Aug 2025 onward</span><h3>Monthly consolidated invoices</h3><p>One invoice per billing account each month, with credit notes and multiple currencies.</p></article>
       <article class="other reveal"><span class="when">Jul 2026</span><h3>Bank rules across many accounts</h3><p>Create once, apply to many accounts. All-or-nothing, so nothing is half saved.</p></article>
-    </div>
-  </section>
-
-  <section class="container" id="experience" aria-labelledby="exp-h">
-    <div class="sec-head reveal"><div><span class="eyebrow">Experience</span><h2 id="exp-h">Where I've worked</h2></div><a class="btn btn-ghost btn-sm" href="https://raw.githubusercontent.com/TheCoderAS/thecoderas/main/files/Aalok_Kumar_Resume.pdf" download="Aalok_Kumar_Resume.pdf">Full resume</a></div>
-    <div class="timeline">
-      <div class="role reveal"><span class="logo av-t" aria-hidden="true">A</span><div><h3>Backend Software Engineer</h3><p>Cloud accounting SaaS, Singapore · remote</p></div><span class="when now">Apr 2025 – now</span></div>
-      <div class="role reveal"><span class="logo av-o" aria-hidden="true">B</span><div><h3>Associate Consultant, Backend</h3><p>Banking software company, Bengaluru · core banking</p></div><span class="when">Jun 2023 – Mar 2025</span></div>
     </div>
     <p class="honest">The projects above are my own contributions, built as part of larger engineering teams.</p>
   </section>
