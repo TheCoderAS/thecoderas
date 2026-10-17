@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://aalok.loadbio.com/sitemap.xml
