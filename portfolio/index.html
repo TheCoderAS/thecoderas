@@ -3,8 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-PTD5Y7VL34"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-PTD5Y7VL34');</script>
+<script>
+window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); }
+window.loadAnalytics = function () {
+  if (window.analyticsLoaded) return; window.analyticsLoaded = true;
+  window['ga-disable-G-PTD5Y7VL34'] = false;
+  var s = document.createElement('script'); s.async = true; s.src = 'https://www.googletagmanager.com/gtag/js?id=G-PTD5Y7VL34'; document.head.appendChild(s);
+  gtag('js', new Date()); gtag('config', 'G-PTD5Y7VL34');
+};
+try { if (localStorage.getItem('analytics-consent') === 'granted') loadAnalytics(); } catch (e) {}
+</script>
 <style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;padding:0}img{max-width:100%}[hidden]{display:none!important}</style>
 <title>Aalok Kumar – Java Backend Engineer in Bengaluru | Spring Boot, PostgreSQL, AWS</title>
 <meta name="description" content="Aalok Kumar is a Java backend engineer in Bengaluru building fintech and SaaS systems: subscription billing, e-invoicing, tax filing and reliable background processing with Java, Spring Boot, PostgreSQL, AWS and GraphQL.">
@@ -371,6 +379,11 @@ dialog.reader::backdrop { background: color-mix(in srgb, #05070C 55%, transparen
   .stat + .stat { border-left: 0; border-top: 1px solid var(--line); }
   .card.wide .big { font-size: 26px; }
 }
+.consent { position: fixed; left: 16px; right: 16px; bottom: calc(16px + env(safe-area-inset-bottom, 0px)); margin-inline: auto; max-width: 560px; display: flex; flex-wrap: wrap; align-items: center; gap: 12px 16px; background: var(--surface); color: var(--ink); border: 1px solid var(--line); border-radius: 14px; box-shadow: var(--shadow-lg); padding: 14px 16px; z-index: 55; font-size: 14px; line-height: 1.5; }
+.consent p { margin: 0; flex: 1 1 260px; color: var(--muted); }
+.consent-actions { display: flex; gap: 8px; margin-left: auto; }
+.link-btn { background: none; border: 0; padding: 0; font: inherit; color: inherit; text-decoration: underline; text-underline-offset: 3px; cursor: pointer; }
+.link-btn:hover { color: var(--ink); }
 </style>
 </head>
 <body>
@@ -551,7 +564,7 @@ dialog.reader::backdrop { background: color-mix(in srgb, #05070C 55%, transparen
 </main>
 
 <footer class="gutter">
-  <div class="container"><span>© <span id="year">2026</span> Aalok Kumar</span></div>
+  <div class="container"><span>© <span id="year">2026</span> Aalok Kumar</span><button class="link-btn" id="consent-open" type="button">Cookie settings</button></div>
 </footer>
 
 <dialog class="reader" id="reader" aria-labelledby="reader-crumb">
@@ -764,6 +777,13 @@ dialog.reader::backdrop { background: color-mix(in srgb, #05070C 55%, transparen
 </article></div>
 </section>
 
+<div class="consent" id="consent" role="region" aria-label="Cookie consent" hidden>
+  <p>This site uses Google Analytics cookies to count visits. Nothing is tracked unless you allow it.</p>
+  <div class="consent-actions">
+    <button class="btn btn-ghost btn-sm" id="consent-no" type="button">Decline</button>
+    <button class="btn btn-primary btn-sm" id="consent-yes" type="button">Allow</button>
+  </div>
+</div>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
 <script>
@@ -783,6 +803,26 @@ dialog.reader::backdrop { background: color-mix(in srgb, #05070C 55%, transparen
     root.setAttribute('data-theme', next);
     try { localStorage.setItem('theme', next); } catch (e) {}
   });
+
+  // Analytics consent
+  var consent = document.getElementById('consent');
+  function choice() { try { return localStorage.getItem('analytics-consent'); } catch (e) { return null; } }
+  function decide(value) {
+    try { localStorage.setItem('analytics-consent', value); } catch (e) {}
+    consent.hidden = true;
+    if (value === 'granted') { loadAnalytics(); return; }
+    window['ga-disable-G-PTD5Y7VL34'] = true;
+    var host = location.hostname, base = host.split('.').slice(-2).join('.');
+    document.cookie.split(';').forEach(function (c) {
+      var name = c.split('=')[0].trim(); if (name.indexOf('_ga') !== 0) return;
+      [host, '.' + host, '.' + base].forEach(function (d) { document.cookie = name + '=; Max-Age=0; path=/; domain=' + d; });
+      document.cookie = name + '=; Max-Age=0; path=/';
+    });
+  }
+  if (!choice()) consent.hidden = false;
+  document.getElementById('consent-yes').addEventListener('click', function () { decide('granted'); });
+  document.getElementById('consent-no').addEventListener('click', function () { decide('denied'); });
+  document.getElementById('consent-open').addEventListener('click', function () { consent.hidden = false; document.getElementById('consent-yes').focus(); });
 
   var toast = document.getElementById('toast'), tt;
   function say(msg) { toast.textContent = msg; toast.classList.add('show'); clearTimeout(tt); tt = setTimeout(function () { toast.classList.remove('show'); }, 1800); }
