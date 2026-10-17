@@ -1,6 +1,8 @@
 <h1>Hi there, 👋 I'm Aalok Kumar</h1>
 <h4>Senior Backend Engineer | Building reliable event-driven systems | Java, Python, Spring Boot, FastAPI</h4>
 
+🌐 **Portfolio:** <a href="https://aalok.loadbio.com" target="_blank">aalok.loadbio.com</a>
+
 - 🚀 Backend engineer with 3+ years of experience designing and delivering distributed backend systems and event-driven services with a focus on scalability, reliability, and performance.
 - 🧾 Since April 2025, building accounting and compliance features at **Tinvio Digital Services**, owning end-to-end system design and development to ensure 100% reliability.
 - 🐍 Hands-on with **Python**, **FastAPI**, and **SQLAlchemy**, alongside deep expertise in Java, Spring, and cloud-native tooling.
