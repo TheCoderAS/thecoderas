@@ -385,7 +385,7 @@ dialog.reader::backdrop { background: color-mix(in srgb, #05070C 55%, transparen
   .card.wide .big { font-size: 26px; }
 }
 .consent { position: fixed; left: 16px; right: 16px; bottom: calc(16px + env(safe-area-inset-bottom, 0px)); margin-inline: auto; max-width: 560px; display: flex; flex-wrap: wrap; align-items: center; gap: 12px 16px; background: var(--surface); color: var(--ink); border: 1px solid var(--line); border-radius: 14px; box-shadow: var(--shadow-lg); padding: 14px 16px; z-index: 55; font-size: 14px; line-height: 1.5; }
-.consent p { margin: 0; flex: 1 1 260px; color: var(--muted); }
+.consent p { margin: 0; flex: 1 1 180px; color: var(--muted); }
 .consent-actions { display: flex; gap: 8px; margin-left: auto; }
 .link-btn { background: none; border: 0; padding: 0; font: inherit; color: inherit; text-decoration: underline; text-underline-offset: 3px; cursor: pointer; }
 .link-btn:hover { color: var(--ink); }
@@ -783,7 +783,7 @@ dialog.reader::backdrop { background: color-mix(in srgb, #05070C 55%, transparen
 </section>
 
 <div class="consent" id="consent" role="region" aria-label="Cookie consent" hidden>
-  <p>This site uses Google Analytics cookies to count visits. You can allow or decline them. If you decline, only anonymous, cookie-free visit signals are sent.</p>
+  <p>This site uses cookies to count visits.</p>
   <div class="consent-actions">
     <button class="btn btn-ghost btn-sm" id="consent-no" type="button">Decline</button>
     <button class="btn btn-primary btn-sm" id="consent-yes" type="button">Allow</button>
