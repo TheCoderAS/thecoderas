@@ -4,10 +4,17 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <script>
-// Google consent mode: cookie-free pings until the visitor allows analytics cookies
+// Google consent mode: analytics cookies on by default, except in the EEA, UK and Switzerland
+// (Google resolves the visitor's region), where only cookie-free pings are sent until they allow it.
 window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); }
 var savedConsent = null; try { savedConsent = localStorage.getItem('analytics-consent'); } catch (e) {}
-gtag('consent', 'default', { analytics_storage: savedConsent === 'granted' ? 'granted' : 'denied', ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied' });
+var noAds = { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied' };
+if (savedConsent === 'granted' || savedConsent === 'denied') {
+  gtag('consent', 'default', Object.assign({ analytics_storage: savedConsent }, noAds));
+} else {
+  gtag('consent', 'default', Object.assign({ analytics_storage: 'granted' }, noAds));
+  gtag('consent', 'default', { analytics_storage: 'denied', region: ['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IE','IT','LV','LT','LU','MT','NL','PL','PT','RO','SK','SI','ES','SE','IS','LI','NO','GB','CH'] });
+}
 gtag('js', new Date()); gtag('config', 'G-PTD5Y7VL34');
 </script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-PTD5Y7VL34"></script>
@@ -776,7 +783,7 @@ dialog.reader::backdrop { background: color-mix(in srgb, #05070C 55%, transparen
 </section>
 
 <div class="consent" id="consent" role="region" aria-label="Cookie consent" hidden>
-  <p>This site uses Google Analytics. Cookies are only stored if you allow them. If you decline, only anonymous, cookie-free visit signals are sent.</p>
+  <p>This site uses Google Analytics cookies to count visits. You can allow or decline them. If you decline, only anonymous, cookie-free visit signals are sent.</p>
   <div class="consent-actions">
     <button class="btn btn-ghost btn-sm" id="consent-no" type="button">Decline</button>
     <button class="btn btn-primary btn-sm" id="consent-yes" type="button">Allow</button>
@@ -817,7 +824,10 @@ dialog.reader::backdrop { background: color-mix(in srgb, #05070C 55%, transparen
       document.cookie = name + '=; Max-Age=0; path=/';
     });
   }
-  if (!choice()) consent.hidden = false;
+  // Only prompt visitors whose clock is set to a European time zone; Google's region rule above is what actually enforces consent
+  var tz = ''; try { tz = Intl.DateTimeFormat().resolvedOptions().timeZone || ''; } catch (e) {}
+  var inEurope = /^Europe\//.test(tz) || /^Atlantic\/(Azores|Canary|Faroe|Madeira|Reykjavik)$/.test(tz);
+  if (!choice() && inEurope) consent.hidden = false;
   document.getElementById('consent-yes').addEventListener('click', function () { decide('granted'); });
   document.getElementById('consent-no').addEventListener('click', function () { decide('denied'); });
   document.getElementById('consent-open').addEventListener('click', function () { consent.hidden = false; document.getElementById('consent-yes').focus(); });
