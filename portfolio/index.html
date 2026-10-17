@@ -165,7 +165,7 @@ code { font-family: var(--mono); font-size: .92em; }
 @media (prefers-reduced-motion: no-preference) { .pulse::after { animation: ping 2.2s ease-out infinite; } }
 @keyframes ping { 0% { transform: scale(.6); opacity: .7; } 100% { transform: scale(1.6); opacity: 0; } }
 
-.stats { position: relative; z-index: 1; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0; border: 1px solid var(--line); border-radius: 20px; background: var(--surface); box-shadow: var(--shadow); overflow: hidden; margin-bottom: 8px; }
+.stats { position: relative; z-index: 1; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0; border: 1px solid var(--line); border-radius: 20px; background: var(--surface); box-shadow: var(--shadow); overflow: hidden; margin-bottom: 8px; }
 .stat { padding: 20px 22px; display: grid; gap: 2px; min-width: 0; }
 .stat + .stat { border-left: 1px solid var(--line); }
 .stat strong { font-family: var(--display); font-size: clamp(26px, 3.2vw, 34px); font-weight: 800; letter-spacing: -.03em; line-height: 1.1; font-variant-numeric: tabular-nums; }
@@ -347,9 +347,6 @@ dialog.reader::backdrop { background: color-mix(in srgb, #05070C 55%, transparen
 @media (max-width: 760px) {
   .nav-links { display: none; }
   .nav-tools { margin-left: auto; }
-  .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .stat:nth-child(3) { border-left: 0; }
-  .stat:nth-child(n+3) { border-top: 1px solid var(--line); }
   .bento, .others { grid-template-columns: minmax(0, 1fr); }
   .card.wide { grid-column: auto; }
   .stage { min-height: 140px; }
@@ -364,6 +361,11 @@ dialog.reader::backdrop { background: color-mix(in srgb, #05070C 55%, transparen
   .match { grid-template-columns: minmax(0, 1fr); }
   .big, .card.wide .big { font-size: 34px; }
   .card.wide .big { font-size: 30px; }
+}
+@media (max-width: 560px) {
+  .stats { grid-template-columns: minmax(0, 1fr); }
+  .stat { grid-template-columns: 104px minmax(0, 1fr); align-items: baseline; gap: 12px; padding: 14px 20px; }
+  .stat + .stat { border-left: 0; border-top: 1px solid var(--line); }
 }
 @media (max-width: 360px) {
   .order, .tiles, .stats { grid-template-columns: minmax(0, 1fr); }
@@ -423,7 +425,6 @@ dialog.reader::backdrop { background: color-mix(in srgb, #05070C 55%, transparen
     <div class="stats" role="list">
       <div class="stat" role="listitem"><strong>~2,100</strong><span>commits of my own</span></div>
       <div class="stat" role="listitem"><strong>3</strong><span>countries' tax systems integrated</span></div>
-      <div class="stat" role="listitem"><strong id="tenure">18 mo</strong><span id="tenure-range">Apr 2025 – Oct 2026</span></div>
       <div class="stat" role="listitem"><strong>6</strong><span>systems built or led</span></div>
     </div>
   </div>
@@ -773,11 +774,6 @@ dialog.reader::backdrop { background: color-mix(in srgb, #05070C 55%, transparen
   var root = document.documentElement;
   var now = new Date();
   var yearEl = document.getElementById('year'); if (yearEl) yearEl.textContent = now.getFullYear();
-  var months = Math.max(1, (now.getFullYear() - 2025) * 12 + (now.getMonth() - 3));
-  var mon = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][now.getMonth()];
-  var tEl = document.getElementById('tenure'), trEl = document.getElementById('tenure-range');
-  if (tEl) tEl.textContent = months >= 24 ? (Math.floor(months / 12) + '+ yrs') : (months + ' mo');
-  if (trEl) trEl.textContent = 'Apr 2025 – ' + mon + ' ' + now.getFullYear();
   try { var saved = localStorage.getItem('theme'); if (saved === 'light' || saved === 'dark') root.setAttribute('data-theme', saved); } catch (e) {}
   document.getElementById('theme-btn').addEventListener('click', function () {
     var cur = root.getAttribute('data-theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
